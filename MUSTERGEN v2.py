@@ -12,7 +12,7 @@ size=100     #size(3-250)                   (100)   (250)   (500)    (1000)
 rand=4        #random change(0-255)          (4-5)   (3-4)   (2-3)    (1-2)
 rand2=2       #chance to change(0-255)       (2)     (2)     (2)      (2)
 #time         #the average time              (1s)    (8s)    (1.1min) (8.5min)
-show=1          # when to draw 1 always "x" when finished (higher faster loading)
+show="x"          # when to draw 1 always "x" when finished (higher faster loading)
 
 #variables
 size2 = size**2
@@ -27,9 +27,9 @@ tt=time.time()
 #cord:(red,green,blue)
 #d={size2//2+size//2:(0,138,128)} #cyan in middle
 #d={size2//2+size//2:(128,0,128)} #purple in middle
-#d={size2//2:(0,138,128),size2//2+size-1:(128,0,128)}#both pruple and cyan
+d={size2//2:(0,138,128),size2//2+size-1:(128,0,128)}#both pruple and cyan
 #d=dict((random.randint(0,size2),tuple([random.randint(0,255) for i in range(3)])) for i in range(10))
-d={size2//2:(255, 192, 203),size2//2+size-1:(255, 255, 0)}#custom
+#d={size2//2:(255, 192, 203),size2//2+size-1:(255, 255, 0)}#custom
 
 
 
